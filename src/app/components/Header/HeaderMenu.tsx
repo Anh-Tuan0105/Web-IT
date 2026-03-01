@@ -56,7 +56,7 @@ export const HeaderMenu = (props: {
         },
         {
             name: "Top Công Ty IT",
-            link: "#",
+            link: "/company/list",
             children: [
                 {
                     name: "FPT Software",

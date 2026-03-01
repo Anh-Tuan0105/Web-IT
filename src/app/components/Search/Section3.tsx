@@ -3,6 +3,7 @@ import Link from "next/link"
 import { FaUserTie } from "react-icons/fa"
 import { FaLocationDot } from "react-icons/fa6"
 import { IoBriefcase } from "react-icons/io5"
+import { Pagination } from "../Pagination/Pagination"
 
 export const Section3 = () => {
 
@@ -10,17 +11,17 @@ export const Section3 = () => {
         [
             {
                 name: "Frontend Engineer (ReactJS)",
-                link: "#",
+                link: "/job/detail/1",
                 image: "assets/images/logo-1.png"
             },
             {
                 name: "MB Bank",
-                link: "#",
+                link: "/job/detail/2",
                 image: "assets/images/logo-2.png"
             },
             {
                 name: "FPT Software",
-                link: "#",
+                link: "/job/detail/3",
                 image: "assets/images/logo-3.png"
             },
         ]
@@ -105,13 +106,7 @@ export const Section3 = () => {
                             ))}
                         </div>
                     )}
-                    <div className="mt-[30px]">
-                        <select name="" id="" className="border border-[#DEDEDE] rounded-[8px] py-[12px] px-[18px] font-[400] text-[16px] text-[#414042]">
-                            <option value="">Trang 1</option>
-                            <option value="">Trang 2</option>
-                            <option value="">Trang 3</option>
-                        </select>
-                    </div>
+                    <Pagination/>
                 </div>
             </div>
         </>

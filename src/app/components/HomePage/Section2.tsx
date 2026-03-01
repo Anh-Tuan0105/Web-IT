@@ -1,29 +1,31 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
 import { FaUserTie } from "react-icons/fa";
+import { Pagination } from "../Pagination/Pagination";
 
 export const Section2 = (props: {
     name: string
+    pagination: boolean
 }) => {
 
-    const { name } = props;
+    const { name, pagination } = props;
 
     const dataCompany =
         [
             {
                 name: "LG Electronics Development Vietnam (LGEDV)",
                 link: "#",
-                image: "assets/images/logo-1.png"
+                image: "/assets/images/logo-1.png"
             },
             {
                 name: "MB Bank",
                 link: "#",
-                image: "assets/images/logo-2.png"
+                image: "/assets/images/logo-2.png"
             },
             {
                 name: "FPT Software",
                 link: "#",
-                image: "assets/images/logo-3.png"
+                image: "/assets/images/logo-3.png"
             },
         ]
 
@@ -58,6 +60,9 @@ export const Section2 = (props: {
                                 </Link>
                             ))}
                         </div>
+                    )}
+                    {pagination && (
+                        <Pagination/>
                     )}
                 </div>
             </div>

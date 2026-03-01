@@ -8,7 +8,7 @@ export default function Home() {
       <Section1/>
       {/* End Section 1 */}
       {/* Section 2 */}
-      <Section2 name="Nhà tuyển dụng hàng đầu"/>
+      <Section2 name="Nhà tuyển dụng hàng đầu" pagination = {false}/>
       {/* End Section 2 */}
     </>
   )
